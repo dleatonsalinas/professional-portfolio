@@ -194,11 +194,11 @@ footer{
 
 .about{
     max-width: 100%;
-    margin: 0px 75px 0px;
-    padding: 100px 0px;
+    margin: 0px;
+    padding: 100px 75px 100px;
     box-sizing: inherit;
     display: block;
-    background: #fff;
+    background: #f5f3ef;
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
@@ -213,15 +213,32 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-  }
+}
   
-  .column {
+.column {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-  }
+}
+
+.work{
+    width: 100%;
+    margin: 0px;
+    padding: 0px 50px 50px 50px;
+    box-sizing: inherit;
+    display: block;
+    background: #ABB6BB;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-color: #000;
+    line-height: 1.5;
+    text-align: center;
+    justify-content: space-between;
+}
 
 img{
     width: 100%;
