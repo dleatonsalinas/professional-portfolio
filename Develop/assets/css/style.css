@@ -24,7 +24,7 @@ ol,ul {
     padding-right: 10px;
 }
 
-li {
+.navbar li {
 	display: block;
 	width: 180px;
     margin-top: 36px;
@@ -33,7 +33,7 @@ li {
 	/* border: 1px solid #fff */
 }
 
-a {
+.navbar a {
 	display: block;
 	padding: 3px;
 	text-decoration: none;
@@ -77,14 +77,6 @@ nav a{
     justify-content: flex-end;
 } 
 
-.nav-item:hover {
-    background-color: #fff;
-}
-
-.navitem:hover a {
-    color:#2a3b42;
-}
-
 .logo {
     display: inline-block;
 }
@@ -112,7 +104,8 @@ h2 {
     margin-top: 0px;
     margin-left: 2%;
     font-size: 60px;
-    font-family: 'Molle', 'Times New Roman', serif;
+    font-family: 'Molle', cursive; 'Times New Roman'; serif;
+    font-style: italic; 
     line-height: .8;
     text-align: center;
 }
@@ -142,6 +135,7 @@ h5 {
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
     font-size: 28px;
     font-family: 'Poiret One', 'arial', sans-serif;
     font-weight: 900;
@@ -216,7 +210,7 @@ footer{
 .about-photo{
     width: 100%;
     max-width: 450px;
-    padding: 0px 0px 0px 25px;
+    padding: 0px 25px 0px 25px;
 }
 
 .work{
@@ -254,7 +248,7 @@ img{
     font-weight: 400;
     font-color: #000;
     line-height: 1.5;
-    text-align: match;
+    text-align: left;
 }
 
 input[type=text], select, textarea {
@@ -268,13 +262,58 @@ input[type=text], select, textarea {
     margin-bottom: 15px; 
     resize: vertical;
     display: block;
-  }
+}
 
-  input[type=submit] {
+input[type=submit] {
+    margin: auto;
+    width: 50%;
     background-color: #eeeae5;
     color: black;
     padding: 12px 20px;
     border: 1px solid #ae682b;
     border-radius: 4px;
     cursor: pointer;
-  }
+    display: block;
+    text-align: center;
+}
+
+label {
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    display: block;
+}
+
+.contact-links{
+    width: 100%;
+    display: inline-block;
+    background-color: var(--dark);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}    
+
+.contact-links li {
+	display: inline-block;
+	width: 200px;
+    margin-top: 36px;
+	margin-left: 0px;
+	/* border: 1px solid #fff */
+}
+
+.contact-links a {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+    font-family: 'Poiret One', 'arial', sans-serif;
+    font-weight: 900;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: var(--dark);
+	color: var(--light);
+}
+
+.contact-links img{
+    max-width: 30px;
+}
