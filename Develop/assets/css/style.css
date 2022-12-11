@@ -2,64 +2,153 @@
     --dark: #2a3b42;
     --light: #fff;
     --accent: #ae682b;
-    --font-family1: 'Poiret One', 'Times New Roman', serif;
-    --font-family2: 'arial', 'verdana', sans-serif
-  }
-
-body {
-/*  background: #fff;
-    font-family: 'Times New Roman', Times, serif
-    font-style: normal;
-    font-weight: 400;
-    font-color: #000; */
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
+    --font-family1-serif: 'Molle', 'Times New Roman', serif;
+    --font-family2-sans-serif: 'Poiret One', 'arial', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--dark);
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+li {
+	display: block;
+	width: 180px;
+    margin-top: 36px;
+	float: left;
+	margin-left: 0px;
+	/* border: 1px solid #fff */
+}
+
+a {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+    font-family: 'Poiret One', 'arial', sans-serif;
+    font-weight: 900;
+    letter-spacing: 7px;
+    background-color: var(--dark);
+	color: var(--light);
+}
+
+body {
+    background: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-color: #000;
+    font-size: 18px;
+    line-height: 1.5;
+} 
+
 header {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 0px;
     background-color: var(--dark);
     color:  #fff;
+    font-family: 'Poiret One', 'arial', sans-serif;
+    float: right;
+}
+
+nav a{
+    background-color: var(--dark);
+    color: #ffffff;
+    padding: 30px;
+    font-family: 'Poiret One','Times New Roman', serif;
+    text-align: center;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+} 
+
+.nav-item:hover {
+    background-color: #fff;
+}
+
+.navitem:hover a {
+    color:#2a3b42;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo img {
+    max-width: 100px;
+    max-height: 100px;
+    vertical-align: middle;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
 }
 
 h1 {
     font-size: 18px;
-    font-family: "Poiret One", 'Times New Roman', serif;
+    font-family: 'Poiret One', 'arial', sans-serif;
+    margin-top: 50px;
+    margin-left: 25%;
+
 }
 
 h2 {
-    margin: 2% 0;
+    margin-top: 0px;
+    margin-left: 2%;
+    font-size: 60px;
+    font-family: 'Molle', 'Times New Roman', serif;
+    line-height: .8;
+    text-align: center;
+}
+
+h3 {
+    margin-top: -10px;
+    margin-left: 2%;
+    margin-right: 25%;
     font-size: 30px;
+    font-family: 'Poiret One', 'arial', sans-serif;
+    text-align: right;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
+h4 {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 28px;
+    font-family: 'Poiret One', 'arial', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #f7d4c6;
 }
 
-/* nav{
-    display: flex;
-    background-color: #2a3b42;
-} */
-
-nav a{
-    display: flex;
-    background-color: #2a3b42;
-    color: #ffffff;
-    padding: 30px;
-    font-family: 'Poiret One','Times New Roman', serif;
-    text-align: right;  
+h5 {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 28px;
+    font-family: 'Poiret One', 'arial', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--accent);
 }
-
-/* nav a:hover {
-    color: #fff;
-} */
 
 main {
     display: flex;
@@ -70,7 +159,7 @@ main {
 footer{
     display: flex;
     justify-content: center;
-    background-color: #2a3b42
+    background-color: #2a3b42;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -82,14 +171,22 @@ footer{
     padding: 20px;
 }
 
-.section-heading{
-    display: block;
+.section-header{
+    display: flex;
     font-size: 24px;
     letter-spacing: .25em;
     font-family: arial, verdana, sans-serif;
     font-style: normal;
     font-weight: 900;
     color: #ae682b
+}
+
+.landing{
+    max-width: 100%;
+    margin-bottom: 25%;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 50px 100px 100px 100px;
 }
 
 .about{
@@ -100,15 +197,14 @@ footer{
     display: block;
     background: #fff;
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
     font-color: #000;
     line-height: 1.5;
 }
 
-.about-photo{
-    display: block;
+img{
+    width: 100%;
     max-width: 500px;
 }
-
