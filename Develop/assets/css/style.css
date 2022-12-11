@@ -317,3 +317,8 @@ label {
 .contact-links img{
     max-width: 30px;
 }
+
+.footer p{
+    padding: 30px 0px 0px 0px;
+    font-size: 12px;
+}
