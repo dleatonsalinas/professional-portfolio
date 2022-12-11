@@ -147,6 +147,9 @@ h5 {
     font-weight: 900;
     letter-spacing: 2px;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 7px;
     color: var(--accent);
 }
 
@@ -183,28 +186,45 @@ footer{
 
 .landing{
     max-width: 100%;
-    margin-bottom: 25%;
+    margin-bottom: 0%;
     background-color: var(--dark);
     color: var(--light);
     padding: 50px 100px 100px 100px;
 }
 
 .about{
-    max-width: 900px;
-    margin: 0px;
+    max-width: 100%;
+    margin: 0px 75px 0px;
     padding: 100px 0px;
     box-sizing: inherit;
     display: block;
     background: #fff;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
     font-color: #000;
     line-height: 1.5;
+    justify-content: space-between;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
 
 img{
     width: 100%;
     max-width: 500px;
+    margin-left: 10px;
 }
