@@ -95,7 +95,7 @@ nav a{
 h1 {
     font-size: 1.75vw;
     font-family: 'Poiret One', 'arial', sans-serif;
-    margin-top: 50px;
+    margin-top: 5vw;
     margin-left: 25%;
 
 }
@@ -111,7 +111,7 @@ h2 {
 }
 
 h3 {
-    margin-top: -10px;
+    margin-top: -1vw;
     margin-left: 2%;
     margin-right: 25%;
     font-size: 2.75vw;
@@ -159,13 +159,13 @@ footer{
     background-color: #2a3b42;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 1vw;
 }
 
 .header{
     background-color: #fff;
     text-align: left;
-    padding: 20px;
+    padding: 2vw;
 }
 
 .landing{
@@ -179,7 +179,7 @@ footer{
 .about{
     max-width: 100%;
     margin: 0px;
-    padding: 100px 75px 100px;
+    padding: 10vw 7vw 10vw;
     box-sizing: inherit;
     display: block;
     background: #f5f3ef;
@@ -210,13 +210,13 @@ footer{
 .about-photo{
     width: 100%;
     max-width: 450px;
-    padding: 0px 25px 0px 25px;
+    padding: 0vw 2vw 0vw 2vw;
 }
 
 .work{
     width: 100%;
     margin: 0px;
-    padding: 0px 50px 50px 50px;
+    padding: 0vw 5vw 5vw 5vw;
     box-sizing: inherit;
     display: block;
     background: #ABB6BB;
@@ -232,13 +232,13 @@ footer{
 
 img{
     width: 100%;
-    border-radius: 25px;
+    border-radius: 2vw;
 }
 
 .contact{
     width: 100%;
     margin: auto;
-    padding: 0px 50px 50px 50px;
+    padding: 0vw 5vw 5vw 5vw;
     box-sizing: inherit;
     display: block;
     background: #eeeae5;
@@ -277,6 +277,19 @@ input[type=submit] {
     text-align: center;
 }
 
+.submit:hover {
+    margin: auto;
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid #ae682b;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    text-align: center; 
+}
+
 label {
     margin: auto;
     width: 50%;
@@ -288,8 +301,8 @@ label {
     width: 100%;
     display: inline-block;
     background-color: var(--dark);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     text-align: center;
 }    
 
@@ -307,7 +320,7 @@ label {
 	text-decoration: none;
     font-family: 'Poiret One', 'arial', sans-serif;
     font-weight: 900;
-    letter-spacing: 7px;
+    letter-spacing: .7vw;
     text-transform: uppercase;
     font-size: .75vw;
     background-color: var(--dark);
