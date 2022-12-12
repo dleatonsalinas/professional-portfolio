@@ -50,7 +50,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-color: #000;
-    font-size: 18px;
+    font-size: 1.75vw;
     line-height: 1.5;
 } 
 
@@ -93,7 +93,7 @@ nav a{
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 1.75vw;
     font-family: 'Poiret One', 'arial', sans-serif;
     margin-top: 50px;
     margin-left: 25%;
@@ -103,7 +103,7 @@ h1 {
 h2 {
     margin-top: 0px;
     margin-left: 2%;
-    font-size: 60px;
+    font-size: 5.75vw;
     font-family: 'Molle', cursive; 'Times New Roman'; serif;
     font-style: italic; 
     line-height: .8;
@@ -114,7 +114,7 @@ h3 {
     margin-top: -10px;
     margin-left: 2%;
     margin-right: 25%;
-    font-size: 30px;
+    font-size: 2.75vw;
     font-family: 'Poiret One', 'arial', sans-serif;
     text-align: right;
 }
@@ -123,7 +123,7 @@ h4 {
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 28px;
+    font-size: 2.5vw;
     font-family: 'Poiret One', 'arial', sans-serif;
     font-weight: 900;
     letter-spacing: 2px;
@@ -136,7 +136,7 @@ h5 {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
-    font-size: 28px;
+    font-size: 2.5vw;
     font-family: 'Poiret One', 'arial', sans-serif;
     font-weight: 900;
     letter-spacing: 2px;
@@ -183,7 +183,7 @@ footer{
     box-sizing: inherit;
     display: block;
     background: #f5f3ef;
-    font-size: 17px;
+    font-size: 1.5vw;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
@@ -220,7 +220,7 @@ footer{
     box-sizing: inherit;
     display: block;
     background: #ABB6BB;
-    font-size: 17px;
+    font-size: 1.5vw;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
@@ -242,7 +242,7 @@ img{
     box-sizing: inherit;
     display: block;
     background: #eeeae5;
-    font-size: 17px;
+    font-size: 1.5vw;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
@@ -309,7 +309,7 @@ label {
     font-weight: 900;
     letter-spacing: 7px;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 1vw;
     background-color: var(--dark);
 	color: var(--light);
 }
@@ -320,5 +320,5 @@ label {
 
 .footer p{
     padding: 30px 0px 0px 0px;
-    font-size: 12px;
+    font-size: 1.25vw;
 }
