@@ -138,6 +138,20 @@ h5 {
     color: var(--accent);
 }
 
+h6 {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-size: 2.5vw;
+    font-family: 'Poiret One', 'arial', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .7vw;
+    color: var(--dark;) 
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -183,14 +197,14 @@ footer{
     justify-content: space-between;
 }
 
-.row {
+.about-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
   
-.column {
+.about-column {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -200,7 +214,7 @@ footer{
 
 .about-photo{
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     padding: 0vw 2vw 0vw 2vw;
 }
 
@@ -224,6 +238,57 @@ img{
     line-height: 1.5;
     text-align: center;
     justify-content: space-between;
+}
+
+.work-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.work-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.work-featured{
+
+}
+
+.featured-items{
+
+}
+
+.featured-projects-content-L{
+
+}
+
+.featured-projects-content-R{
+
+}
+
+.featured-project-header{
+
+}
+
+.featured-project-title{
+
+}
+
+.featured-description{
+
+}
+
+.featured-project-photo-L{
+
+}
+
+.featured-project-photo-R{
+
 }
 
 .contact{
@@ -299,7 +364,7 @@ label {
 
 .contact-links li {
 	display: inline-block;
-	width: 300px;
+	width: 275px;
     margin-top: 36px;
 	margin-left: 0px;
 }
