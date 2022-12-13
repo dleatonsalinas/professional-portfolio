@@ -139,17 +139,22 @@ h5 {
 }
 
 h6 {
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
     font-size: 2.5vw;
     font-family: 'Poiret One', 'arial', sans-serif;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: .7vw;
     color: var(--dark;) 
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
 }
 
 main {
@@ -224,11 +229,10 @@ img{
 }
 
 .work{
+    display: grid;
     width: 100%;
     margin: 0px;
     padding: 0vw 5vw 5vw 5vw;
-    box-sizing: inherit;
-    display: block;
     background: #ABB6BB;
     font-size:calc(6px + 1.5vw);
     font-family: 'Times New Roman', Times, serif;
@@ -237,59 +241,189 @@ img{
     font-color: #000;
     line-height: 1.5;
     text-align: center;
-    justify-content: space-between;
-}
-
-.work-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.work-column {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
 }
 
 .work-featured{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(15, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+}
 
+.work-featured img{
+    filter: opacity(0.5);
+}
+
+.work-featured img:hover{
+    filter: none !important;
 }
 
 .featured-items{
+    display: grid;
+    grid-area: 1 / 1 / 16 / 13; 
+}
 
+.featured-projects-content-R1{
+    display: grid;
+    grid-area: 1 / 1 / 6 / 13; 
+    z-index: 1;
+}
+
+.featured-project-header-R1{
+    display: grid;
+    grid-area: 1 / 8 / 2 / 13;
+    font-size:calc(6px + 1.25vw);
+    font-family: 'Poiret One', 'arial', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 900;
+    letter-spacing: .7vw;
+    color: var(--dark);
+    z-index: 7; 
+}
+
+.featured-project-title-R1{
+    display: grid;
+    grid-area: 2 / 8 / 3 / 13;
+    font-size:calc(8px + 3vw);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: .2vw;
+    color: var(--dark);
+    z-index: 10;
+}
+
+.featured-description-R1{
+    display: grid;
+    grid-area: 3 / 6 / 5 / 13;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 2vw;
+    z-index: 13;
+}
+
+.featured-project-photo-R1{
+    display: grid;
+    grid-area: 1 / 1 / 6 / 8;
+    padding-right: 2%;
+    z-index: 4;
 }
 
 .featured-projects-content-L{
-
+    display: grid;
+    grid-area: 6 / 1 / 11 / 13; 
+    z-index: 2;
 }
 
-.featured-projects-content-R{
-
+.featured-project-header-L{
+    display: grid;
+    grid-area: 6 / 1 / 7 / 6;
+    font-size:calc(6px + 1.25vw);
+    font-family: 'Poiret One', 'arial', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 900;
+    letter-spacing: .7vw;
+    color: var(--dark);
+    z-index: 8; 
 }
 
-.featured-project-header{
-
+.featured-project-title-L{
+    display: grid;
+    grid-area: 7 / 1 / 8 / 6;
+    font-size:calc(8px + 3vw);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: .2vw;
+    color: var(--dark);
+    z-index: 11;
 }
 
-.featured-project-title{
-
-}
-
-.featured-description{
-
+.featured-description-L{
+    display: grid;
+    grid-area: 8 / 1 / 10 / 8;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-right: 2%;
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 2vw;
+    z-index: 14;
 }
 
 .featured-project-photo-L{
-
+    display: grid;
+    grid-area: 6 / 6 / 11 / 13;
+    padding-right: 2%;
+    z-index: 5;
 }
 
-.featured-project-photo-R{
-
+.featured-projects-content-R2{
+    display: grid;
+    grid-area: 11 / 1 / 16 / 13; 
+    z-index: 3;
 }
+
+.featured-project-header-R2{
+    display: grid;
+    grid-area: 11 / 8 / 12 / 13;
+    font-size:calc(6px + 1.25vw);
+    font-family: 'Poiret One', 'arial', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 900;
+    letter-spacing: .7vw;
+    color: var(--dark);
+    z-index: 9; 
+}
+
+.featured-project-title-R2{
+    display: grid;
+    grid-area: 12 / 8 / 13 / 13;
+    font-size:calc(8px + 3vw);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: .2vw;
+    color: var(--dark);
+    z-index: 12;
+}
+
+.featured-description-R2{
+    display: grid;
+    grid-area: 13 / 6 / 15 / 13;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    padding-right: 2%;
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 2vw;
+    z-index: 15;
+}
+
+.featured-project-photo-R2{
+    display: grid;
+    grid-area: 11 / 1 / 16 / 8;
+    padding-right: 2%;
+    z-index: 6;
+}
+
 
 .contact{
     width: 100%;
