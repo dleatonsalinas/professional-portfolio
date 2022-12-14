@@ -98,8 +98,7 @@ h2 {
     margin-top: 0px;
     margin-left: 2%;
     font-size: 5.75vw;
-    font-family: 'Molle', cursive; 'Times New Roman'; serif;
-    font-style: italic; 
+    font-family: 'Molle', 'Times New Roman'; serif;
     line-height: .8;
     text-align: center;
 }
@@ -179,7 +178,7 @@ footer{
 }
 
 .landing{
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 0%;
     background-color: var(--dark);
     color: var(--light);
@@ -187,11 +186,11 @@ footer{
 }
 
 .about{
-    max-width: 100%;
+    width: 100%;
     margin: 0px;
     padding: 10vw 7vw 10vw;
     box-sizing: inherit;
-    display: block;
+    display: flex;
     background: #f5f3ef;
     font-size:  clamp(10px, 1.75vw, 16px);
     font-family: 'Times New Roman', Times, serif;
@@ -199,14 +198,15 @@ footer{
     font-weight: 400;
     font-color: #000;
     line-height: 1.5;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .about-row {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 1000px;
 }
   
 .about-column {
@@ -228,12 +228,18 @@ img{
     border-radius: 2vw;
 }
 
+.work-bkrd{
+    width: 100%;
+    background: #ABB6BB; 
+}
+
 .work{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    margin: 0px;
-    padding: 0vw 5vw 5vw 5vw;
-    background: #ABB6BB;
+    max-width: 1000px;
+    padding: 2vw 5vw 5vw 5vw;
     font-size: clamp(10px, 1.75vw, 16px);
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
@@ -444,10 +450,78 @@ img{
     z-index: 4;
 }
 
+.work-other-items img{
+    filter: opacity(0.5);
+    max-width: 400px;
+}
+
+.work-other-items img:hover{
+    filter: none !important;
+}
+
+.work-other-header{
+    display: block;
+    width: 100%;
+    padding: 3%;
+    font-size: clamp(8px, 1.5vw, 26px);
+    font-family: 'Poiret One', 'arial', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 900;
+    letter-spacing: .7vw;
+    color: var(--dark);
+}
+
+.work-other-grid-bkrd{
+    width: 100%;
+    background: #ABB6BB;
+ }
+
+.work-other-container{
+    display: grid;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    background: #ABB6BB;
+
+}
+
+.work-other-items{
+    display: grid;
+    width: 100%;
+}
+
+.work-other-title a{
+    font-size: clamp(8px, 1.5vw, 24px);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .25vw;
+}
+
+.work-other-description p{
+    font-size: clamp(8px, 1.25vw, 14px);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-bkrd{
+    width: 100%;
+    background-color: #eeeae5;
+}
+
 .contact{
     width: 100%;
+    max-width: 1000px;
     margin: auto;
-    padding: 0vw 5vw 5vw 5vw;
+    padding: 2vw 5vw 5vw 5vw;
     box-sizing: inherit;
     display: block;
     background: #eeeae5;
@@ -458,6 +532,14 @@ img{
     font-color: #000;
     line-height: 1.5;
     text-align: left;
+}
+
+.contact-container label{
+    font-size:  clamp(10px, 1.75vw, 16px);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-color: #000;
 }
 
 input[type=text], select, textarea {
