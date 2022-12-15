@@ -2,7 +2,7 @@
     --dark: #2a3b42;
     --light: #fff;
     --accent: #ae682b;
-    --font-family1-serif: 'Molle', 'Times New Roman', serif;
+    --font-family1-serif: 'Berkshire Swash', 'Times New Roman', serif;
     --font-family2-sans-serif: 'Poiret One', 'arial', sans-serif;
 }
 
@@ -98,7 +98,7 @@ h2 {
     margin-top: 0px;
     margin-left: 2%;
     font-size: 5.75vw;
-    font-family: 'Molle', 'Times New Roman'; serif;
+    font-family: 'Berkshire Swash', 'Times New Roman'; serif;
     line-height: .8;
     text-align: center;
 }
