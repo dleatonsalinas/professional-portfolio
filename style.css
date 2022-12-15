@@ -98,7 +98,7 @@ h2 {
     margin-top: 0px;
     margin-left: 2%;
     font-size: 5.75vw;
-    font-family: 'Berkshire Swash', 'Times New Roman'; serif;
+    font-family: 'Berkshire Swash', 'Times New Roman', serif;
     line-height: .8;
     text-align: center;
 }
@@ -279,7 +279,7 @@ img{
 .featured-project-header-R1{
     display: grid;
     grid-area: 1 / 8 / 2 / 13;
-    font-size: clamp(8px, 1.5vw, 26px);
+    font-size: clamp(8px, 1.5vw, 18px);
     font-family: 'Poiret One', 'arial', sans-serif;
     text-align: right;
     text-transform: uppercase;
@@ -288,6 +288,7 @@ img{
     letter-spacing: .7vw;
     color: var(--dark);
     z-index: 2; 
+    white-space: nowrap;
 }
 
 .featured-project-title-R1{
@@ -314,7 +315,7 @@ img{
     padding-left: 2%;
     background-color: var(--dark);
     color: #fff;
-    border-radius: 2vw;
+    border-radius: 0vw;
     z-index: 5;
 }
 
@@ -342,7 +343,7 @@ img{
 .featured-project-header-L{
     display: grid;
     grid-area: 1 / 1 / 2 / 6;
-    font-size: clamp(8px, 1.5vw, 26px);
+    font-size: clamp(8px, 1.5vw, 18px);
     font-family: 'Poiret One', 'arial', sans-serif;
     text-align: left;
     text-transform: uppercase;
@@ -351,6 +352,7 @@ img{
     letter-spacing: .7vw;
     color: var(--dark);
     z-index: 2; 
+    white-space: nowrap;
 }
 
 .featured-project-title-L{
@@ -376,7 +378,7 @@ img{
     padding-left: 2%;
     background-color: var(--dark);
     color: #fff;
-    border-radius: 2vw;
+    border-radius: 0vw;
     z-index: 5;
 }
 
@@ -404,7 +406,7 @@ img{
 .featured-project-header-R2{
     display: grid;
     grid-area: 1 / 8 / 2 / 13;
-    font-size: clamp(8px, 1.5vw, 26px);
+    font-size: clamp(8px, 1.5vw,18px);
     font-family: 'Poiret One', 'arial', sans-serif;
     text-align: right;
     text-transform: uppercase;
@@ -413,6 +415,7 @@ img{
     letter-spacing: .7vw;
     color: var(--dark);
     z-index: 2; 
+    white-space: nowrap;
 }
 
 .featured-project-title-R2{
@@ -439,7 +442,7 @@ img{
     padding-left: 2%;
     background-color: var(--dark);
     color: #fff;
-    border-radius: 2vw;
+    border-radius: 0vw;
     z-index: 5;
 }
 
